@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Enter the information requested below.</p>
+    <form id="survey-form">
+      <div class="form1">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name." required><br><br>
+    
+      <label id="email-label" for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your e-mail." required><br><br>
+    
+      <label id="number-label" for="number">Number:</label>
+      <input type="number" id="number" name="number" min="0" max="99999999" placeholder="Enter your cell phone number." required><br><br>
+    </div>
+    
+    <fieldset>
+      <legend>You are a..</legend>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Teacher</option>
+      </select>
+    </fieldset>
+    
+      <br>
+      <br>
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" value="opcion1" name="opciones">
+      <label for="opcion1">Male</label>
+      <input type="radio" value="opcion2" name="opciones">
+      <label for="opcion2">Female</label>
+    </fieldset>
+    <br><br>
+    
+    <fieldset>
+      <legend>Choose your courses.</legend>
+      <input type="checkbox" value="opcion1" name="opciones" >Web desing</input><br>
+      <input type="checkbox" value="opcion2" name="opciones">SQL Database</input>
+    </fieldset>
+    <br>
+    <br>
+      <textarea for="textarea" placeholder="Write something about yourself..." required></textarea>
+      <br><br>
+    
+      <button id="submit" >Submit</button>
+    </form>
+    </main>
+</body>
+</html>
